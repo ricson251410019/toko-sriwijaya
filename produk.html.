@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Toko Sriwijaya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <h2>Toko Sriwijaya</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h2>Daftar Produk</h2>
+    <p style="text-align:center">
+      Berikut beberapa produk pilihan Toko Sriwijaya.
+    </p>
+
+    <div class="products">
+      <article class="product-card">
+        <h3>Produk 1</h3>
+        <p>Produk pilihan dengan kualitas baik.</p>
+        <p><strong>Harga: Rp25.000</strong></p>
+      </article>
+
+      <article class="product-card">
+        <h3>Produk 2</h3>
+        <p>Produk berkualitas untuk kebutuhan Anda.</p>
+        <p><strong>Harga: Rp35.000</strong></p>
+      </article>
+
+      <article class="product-card">
+        <h3>Produk 3</h3>
+        <p>Produk menarik dengan harga terjangkau.</p>
+        <p><strong>Harga: Rp50.000</strong></p>
+      </article>
+    </div>
+
+    <p style="text-align:center; margin-top:30px">
+      <a class="button" href="kontak.html">Hubungi Kami</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Toko Sriwijaya</p>
+  </footer>
+</body>
+</html>
