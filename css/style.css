@@ -1,0 +1,202 @@
+
+/* ===== TAMPILAN DASAR ===== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #263238;
+  background: #f7f9f4;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== HEADER DAN NAVIGASI ===== */
+.header {
+  background: #176b3a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffdf4d;
+}
+
+/* ===== BAGIAN UTAMA ===== */
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background: #e6f2df;
+  border-radius: 0 0 18px 18px;
+}
+
+.hero h1 {
+  color: #176b3a;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background: #f2cf32;
+  color: #263238;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #e4bb19;
+}
+
+.section {
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+.section h2 {
+  text-align: center;
+  color: #176b3a;
+}
+
+/* ===== KARTU ===== */
+.features,
+.products,
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card,
+.product-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000012;
+  overflow-wrap: anywhere;
+}
+
+.card h3 {
+  color: #176b3a;
+}
+
+/* ===== GAMBAR ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== FORM ===== */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 11px;
+  margin: 6px 0 14px;
+  border: 1px solid #b9c7ba;
+  border-radius: 6px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 18px;
+  background: #176b3a;
+  color: white;
+  text-align: center;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+  .features,
+  .products,
+  .product-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+}
+
+/* ===== HP ===== */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .features,
+  .products,
+  .product-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card,
+  .product-card {
+    padding: 18px;
+  }
+}
